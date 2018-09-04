@@ -4,9 +4,29 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Leah Stigale Portfolio</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="home.css">
-  </head>
-  <body>
+    <script type="text/javascript" src="fallingStars.js"></script>
 
+  </head>
+  <body onload="starPlacement()">
+    <div onload="stars()" id="sky" class="fullScreen">
+  <script>
+    setInterval(stars, 50);
+    setInterval(background, 70);
+  </script>
+
+
+    <div class="top headerSection">
+      <h1>Leah Stigale Portfolio</h1>
+      <a href="#">About</a> -
+      <a href="#">Projects</a> -
+      <a href="#">GitHub</a>
+    </div>
+
+
+
+    <a onClick="scroll" href="#top"><img id="upArrow" src="upArrowWhite.png"></a>
+</div>
   </body>
 </html>
