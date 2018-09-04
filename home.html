@@ -1,32 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leah Stigale Portfolio</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
-    <link rel="stylesheet" href="home.css">
-    <script type="text/javascript" src="fallingStars.js"></script>
 
-  </head>
-  <body onload="starPlacement()">
-    <div onload="stars()" id="sky" class="fullScreen">
-  <script>
-    setInterval(stars, 50);
-    setInterval(background, 70);
-  </script>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Leah Stigale Portfolio</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
+  <link rel="stylesheet" href="home.css">
+  <script type="text/javascript" src="fallingStars.js"></script>
 
+</head>
 
-    <div class="top headerSection">
+<body onload="starPlacement()">
+  <div onload="stars()" id="sky" class="fullScreen">
+    <script>
+      setInterval(stars, 50);
+      setInterval(background, 70);
+    </script>
+  </div>
+
+  <div class="top">
+    <div class="headerSection">
       <h1>Leah Stigale Portfolio</h1>
-      <a href="#">About</a> -
-      <a href="#">Projects</a> -
-      <a href="#">GitHub</a>
+        <div class="typewriter">
+          <span class="typewriterSection">
+            <a href="#">About</a> -
+            <a href="#">Projects</a> -
+            <a href="#">GitHub</a>
+          </span>
+        </div>
+
+    </div>
+  </div>
+
+    <div class="about">
+      <div class="aboutSection">
+        <span>Personal</span>
+        <span>Technical</span>
+      </div>
     </div>
 
-
-
     <a onClick="scroll" href="#top"><img id="upArrow" src="upArrowWhite.png"></a>
-</div>
-  </body>
+
+</body>
+
 </html>

@@ -1,5 +1,5 @@
 body {
-  margin:0;
+  margin: 0;
   padding: 0;
   font-family: 'Roboto Slab', serif;
   color: black;
@@ -11,15 +11,27 @@ html {
   scroll-behavior: smooth;
 }
 
-
 h1 {
   margin: 0;
+  padding-bottom: 10px;
+}
+
+.top {
+  padding-top: 38vh;
 }
 
 .headerSection {
   background-color: #ffffff90;
   padding: 20px;
-  margin: 35vh 10% 10% 10%;
+  margin: 0 10% 10% 10%;
+  text-align: center;
+  border-radius: 10%;
+}
+
+.aboutSection {
+  background-color: #ffffff90;
+  padding: 20px;
+  margin: 60vh 10% 10% 10%;
   text-align: center;
   border-radius: 10%;
 }
@@ -36,6 +48,7 @@ a {
   border-radius: 50%;
   width: 3.5px;
   height: 3.5px;
+  z-index: -48;
 }
 
 .backStar {
@@ -44,6 +57,7 @@ a {
   position: fixed;
   width: 2px;
   height: 2px;
+  z-index: -49;
 }
 
 .fullScreen {
@@ -54,15 +68,65 @@ a {
 }
 
 @media only screen and (max-width: 600px) {
-
   .star {
     width: 3px;
     height: 3px;
   }
+}
 
+
+/* Got this typing effect from CSS tricks and edited it */
+
+.typewriter {
+  display: flex;
+  justify-content: center;
+  width: 250.8px;
+  padding: 0;
+  margin: 0 auto;
+}
+
+
+.typewriter span {
+  /* Ensures the content is not revealed until the animation */
+  overflow: hidden;
+  /* The typwriter cursor */
+  border-right: .10em solid black;
+  /* Keeps the content on a single line */
+  white-space: nowrap;
+  /* Gives that scrolling effect as the typing happens */
+  margin: 0 auto;
+  /* Adjust as needed */
+  letter-spacing: .15em;
+
+  animation:
+    typing 3.5s steps(30, end),
+    blink-caret .75s step-end infinite;
+}
+
+/* The typing effect */
+
+@keyframes typing {
+  from {
+    width: 0
+  }
+  to {
+    width: 100%
+  }
+}
+
+/* The typewriter cursor effect */
+
+@keyframes blink-caret {
+  from, to {
+    border-color: transparent
+  }
+  50% {
+    border-color: black
+  }
 }
 
 /*Transitions and all the stuff for the back to top arrow*/
+
 #upArrow {
   position: fixed;
   width: 60px;
@@ -71,15 +135,18 @@ a {
   left: 50%;
   right: -50%;
   transform: translate(-50%) rotate(-33deg);
-  -webkit-transform: translate(-50%) rotate(-33deg); /* Safari*/
-
-  -webkit-transition: width .5s, height .5s, -webkit-transform .5s;; /* For Safari 3.1 to 6.0 */
-  transition: width .5s, height .5s,  transform .5s;
+  -webkit-transform: translate(-50%) rotate(-33deg);
+  /* Safari*/
+  -webkit-transition: width .5s, height .5s, -webkit-transform .5s;
+  ;
+  /* For Safari 3.1 to 6.0 */
+  transition: width .5s, height .5s, transform .5s;
 }
 
 #upArrow:hover {
   width: 65px;
-  height:65px;
-  -webkit-transform: translate(-50%) rotate(0deg); /* Safari */
+  height: 65px;
+  -webkit-transform: translate(-50%) rotate(0deg);
+  /* Safari */
   transform: translate(-50%) rotate(0deg);
 }
