@@ -17,24 +17,38 @@ h1 {
 }
 
 .top {
-  padding-top: 38vh;
+  padding-top: 35vh;
 }
 
 .headerSection {
+  background-color: #ffffff90;
+  padding: 20px;
+  margin: 0 10% 60vh 10%;
+  text-align: center;
+  border-radius: 10%;
+}
+
+#about {
+  padding-bottom: 40vh;
+}
+
+.aboutSection {
   background-color: #ffffff90;
   padding: 20px;
   margin: 0 10% 10% 10%;
   text-align: center;
   border-radius: 10%;
 }
-
-.aboutSection {
-  background-color: #ffffff90;
-  padding: 20px;
-  margin: 60vh 10% 10% 10%;
-  text-align: center;
-  border-radius: 10%;
+.hidden {
+  visibility: hidden;
+  height: 0px;
+  position: absolute;
 }
+
+.cursor {
+  cursor: pointer;
+}
+
 
 a {
   text-decoration: none;
